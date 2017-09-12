@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表格</title>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<!-- <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+		<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+		<!-- <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<!-- <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+
+	</head>
+	<body>
+		<h2>表格</h2>
+
+		<table border="1">
+
+			<thead>
+				<tr>
+					<th>学生番号</th>
+					<th>学生姓名</th>
+					<th>年龄</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>110</td>
+					<td>小张</td>
+				</tr>
+				<tr>
+					<td>111</td>
+					<td>小谢</td>
+				</tr>
+			</tbody>
+
+		</table>
+
+
+		1.普通表格
+		<!-- table:表的根元素 -->
+		<table class="table table-bordered table-hover">
+
+			<thead>
+				<!-- tr:创建一行 -->
+				<tr>
+					<!-- th:一行中的一个单元格（th专门用于表头）-->
+					<th>学生号</th>
+					<th>姓名</th>
+					<th>性别</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<!-- tr:创建第2行 -->
+				<tr>
+					<!-- td:一行中的一个单元格-->
+					<td>001</td>
+					<td>Son</td>
+					<td>男</td>
+				</tr>
+
+				<!-- tr:创建第3行 -->
+				<tr>
+					<td>002</td>
+					<td>Kou</td>
+					<td>男</td>
+				</tr>
+
+				<tr>
+					<td>003</td>
+					<td>Ten</td>
+					<td>女</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+		2.单元格大小不一的表格
+				<table style="width:500px;" border="1">
+
+
+
+
+			<thead>
+				<!-- tr:创建一行 -->
+				<tr>
+					<!-- th:一行中的一个单元格（th专门用于表头）-->
+					<th rowspan=2>学生号 <br>rowspan=2</th>
+					<th colspan=2>成绩 <br>colspan=2</th>
+				</tr>
+				<tr>
+					<td>HTML</td>
+					<td>SQL</td>
+				</tr>
+			</thead>
+
+			<tbody>
+				<!-- tr:创建第2行 -->
+				<tr>
+					<!-- td:一行中的一个单元格-->
+					<td>001</td>
+					<td>60</td>
+					<td>80</td>
+				</tr>
+
+				<!-- tr:创建第3行 -->
+				<tr>
+					<td>002</td>
+					<td>70</td>
+					<td>55</td>
+				</tr>
+
+				<tr>
+					<td>003</td>
+					<td>65</td>
+					<td>70</td>
+				</tr>
+			</tbody>
+		</table>
+		<hr>
+		<a href="index.html" target="_blank">返回主页</a>
+	</body>
+</html>

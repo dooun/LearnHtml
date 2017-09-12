@@ -1,0 +1,17 @@
+.my-div {
+  color: red;
+  border: solid red;
+  width: 300px;
+  background-color: cornsilk;
+  margin: 10px;
+  padding: 10px;
+}
+
+.warning {
+  color:red;
+  font-size:1.5em;
+}
+
+.no-border {
+  border:none;
+}

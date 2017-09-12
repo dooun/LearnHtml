@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+	</head>
+	
+	
+
+	<!-- 通过class="red"来为元素应用red类 -->
+	<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-3 col-md-6 col-xs-10">
+				
+				<h2 id="titl2">学生注册</h2>
+				<form action="12_表单2.html" method="get">
+				学生姓名
+					<input type="text" class="form-control" name="studentName"/><br>
+					密码:
+					<input type="password" class="form-control" name='psw'><br>
+					
+					学生性别
+					<input type="radio" name="sex" value="男"/>男
+					
+					<input type="radio" name="sex" value="女"/>女<br>
+					
+					兴趣爱好
+					<input type="checkbox" name="syumi" value="swim">游泳
+					<input type="checkbox" name="syumi" value="jianshen">健身
+					<input type="checkbox" name="syumi" value="xiaqi">下棋<br>
+					
+					权限选择
+					<select name="kengen">
+						<option value="Admin">Admin</option>
+						<option value="normal">Normal</option>
+					</select>
+					
+					您的意见<br>
+					<textarea class="form-control" name="message" rows="10" cols="30">这是一个textarea
+					</textarea><br>
+					
+					<button class="btn btn-success">点我button</button><br>
+					
+					<input type="submit" id="submitBun" />
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	
+	
+		
+		<hr>
+		<a href="index.html">返回主页</a>
+	</body>
+</html>

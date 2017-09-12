@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML学习主页</title>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+    <select class="123" id="status">
+      <option value=1>第一状态</option>
+      <option value=2>第二状态</option>
+    </select>
+    <button>选择第一个</button>
+
+
+    <script>
+      $(".123").change(function(){
+        console.log($(".123").val());
+      })
+
+      $("button").click(function(){
+        $(".123").val(1);
+
+      })
+    </script>
+
+	</body>
+</html>
